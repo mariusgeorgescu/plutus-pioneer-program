@@ -14,7 +14,7 @@ import Utils (wrap)
 ----------------------------------- ON-CHAIN / VALIDATOR ------------------------------------------
 
 {-# INLINABLE mkValidator #-}
--- This should validate if and only if the two Booleans in the redeemer are True!
+-- This should validate if and only if the two Booleans in the redeemer are equal!
 mkValidator :: () -> (Bool, Bool) -> PlutusV2.ScriptContext -> Bool
 mkValidator _ _ _ = False
 
